@@ -1,6 +1,6 @@
 # React + Vite
 
-## React / Redux 
+## React / Redux / Tailwindcss
 
 yarn || npm i 
 
