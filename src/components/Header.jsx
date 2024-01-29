@@ -30,7 +30,7 @@ const Header = () => {
         Score: {score}
       </span>
       <span className="flex justify-center items-center font-semibold text-xl">
-        Hight Score: {highScore}
+        High Score: {highScore}
       </span>
       <button
         disabled={!endGame}
