@@ -6,7 +6,7 @@ const Card = ({ cardName, matched, selected, ...props }) => {
     <div
       {...props}
       className={classNames(
-        "card [perspective:1000px] [transform-style:preserve-3d] h-36 relative cursor-pointer duration-500",
+        "card [perspective:1000px] [transform-style:preserve-3d] h-36 w-full relative cursor-pointer duration-500",
         { open: selected || matched }
       )}
     >
@@ -15,12 +15,12 @@ const Card = ({ cardName, matched, selected, ...props }) => {
       </div>
       <div
         className={classNames(
-          "card-back absolute z-0 bg-blue-400 w-full h-full flex justify-center items-center rounded-md duration-700",
+          "card-back absolute z-0 bg-blue-400 w-full h-full flex justify-center items-center rounded-md duration-700 p-3",
           { "opacity-50": matched }
         )}
       >
         <img
-          className="w-9/12 object-cover"
+          className="object-scale-down w-full h-full"
           src={icons[cardName + "Icon"]}
           alt={cardName + " Icon"}
         />
