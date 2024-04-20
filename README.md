@@ -1,5 +1,7 @@
 # React + Vite
 
+[live demo](https://nnakress.github.io/memory-game/)
+
 ## React / Redux / Tailwindcss
 
 yarn || npm i 
