@@ -4,10 +4,10 @@ import Main from "./components/Main";
 
 function App() {
   return (
-    <>
+    <main className="container m-auto">
       <Header />
       <Main />
-    </>
+    </main>
   );
 }
 

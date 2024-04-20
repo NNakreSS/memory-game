@@ -23,20 +23,20 @@ const Header = () => {
 
   return (
     <header className="h-20 border-b-2 border-b-black grid grid-cols-4 w-11/12 m-auto mb-5">
-      <h1 className="flex items-center justify-center rounded-lg w-11/12 text-black text-2xl font-bold">
+      <h1 className="flex items-center justify-center rounded-lg w-11/12 text-black text-md xl:text-2xl font-bold">
         NakreS Memory Game
       </h1>
-      <span className="flex justify-center items-center font-semibold text-xl">
+      <span className="flex justify-center items-center font-semibold text-md xl:text-xl">
         Score: {score}
       </span>
-      <span className="flex justify-center items-center font-semibold text-xl">
+      <span className="flex justify-center items-center font-semibold text-md xl:text-xl">
         High Score: {highScore}
       </span>
       <button
         disabled={!endGame}
         onClick={resetGame}
         className={classNames(
-          "flex justify-center items-center  w-32 h-12 m-auto rounded-lg text-white font-semibold",
+          "flex justify-center items-center w-20 md:w-32 h-12 m-auto rounded-lg text-white font-semibold",
           {
             "bg-blue-200": !endGame,
             "bg-blue-500": endGame,

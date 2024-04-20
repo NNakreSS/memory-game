@@ -75,7 +75,7 @@ const GameContainer = () => {
   };
 
   return (
-    <div className="w-3/5 m-auto grid grid-cols-6 gap-5">
+    <div className="w-full m-auto grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-5">
       {gameCards?.map(({ name, id, matched }) => (
         <Card
           selected={selectedCards.some((item) => item.id == id)}
